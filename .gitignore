@@ -1,0 +1,18 @@
+# C++ compiled files
+a.out
+*.out
+*.exe
+
+# Object files
+*.o
+
+# Debug files
+*.gch
+
+# OS junk files
+.DS_Store
+Thumbs.db
+
+# Editor configs (optional)
+.vscode/
+.idea/
