@@ -25,6 +25,7 @@ int main(){
     for(int colIndex=0; colIndex<colSize; colIndex++) {
         cout << arr[rowIndex][colIndex] <<" ";
     }
+    cout << endl;
 
    }
 
