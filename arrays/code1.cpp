@@ -1,34 +1,29 @@
 #include<iostream>
 using namespace std;
 
+int main() {
 
-int main(){
-    //declaring 2D array
-   // int arr[10] [15];  
+    int arr[2][3];
+    int rowSize = 2;
+    int colSize = 3;
 
-   //initialise
-   int arr[5][2] = {
-   {10,30},
-   {20,60},
-   {22,44},
-   {23,45},
-   {65,77}
-   };
- 
-   //cout << arr[2][1] << endl;
-
-
-   //traverse the entire array
-   int rowSize=3;
-   int colSize=2;
-   for(int rowIndex =0; rowIndex<rowSize; rowIndex++) {
-    for(int colIndex=0; colIndex<colSize; colIndex++) {
-        cout << arr[rowIndex][colIndex] <<" ";
+    // Taking input row-wise
+    for(int r = 0; r < rowSize; r++) {
+        for(int c = 0; c < colSize; c++) {
+            cout << "Enter the value for (" << r << ", " << c << ") : ";
+            cin >> arr[r][c];
+        }
     }
-    cout << endl;
 
-   }
+    // Printing the array
+    cout << "\nMatrix is:\n";
 
+    for(int r = 0; r < rowSize; r++) {
+        for(int c = 0; c < colSize; c++) {
+            cout << arr[r][c] << " ";
+        }
+        cout << endl;
+    }
 
     return 0;
 }
