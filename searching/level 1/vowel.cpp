@@ -20,10 +20,11 @@ int main() {
         case 'U':
             cout << "Vowel";
             break;
-
+            
         default:
             cout << "Consonant";
     }
 
     return 0;
 }
+ 
