@@ -25,6 +25,5 @@ bool hasCycle(ListNode* head) {
         }
     }
 
-    
     return false;
 }
