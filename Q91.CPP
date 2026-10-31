@@ -12,10 +12,7 @@ public:
             return 0;
         }
 
-        // States:
-        // hold = maximum profit while holding a stock
-        // sold = maximum profit after selling today
-        // rest = maximum profit while resting
+    
 
         int hold = -prices[0];
         int sold = 0;
@@ -26,15 +23,14 @@ public:
             int prevSold = sold;
             int prevRest = rest;
 
-            // Either continue holding,
-            // or buy today after a rest day.
+           
+            
             hold = max(prevHold, prevRest - prices[i]);
+            
 
-            // Sell the stock today.
             sold = prevHold + prices[i];
 
-            // Either continue resting,
-            // or enter rest after selling yesterday.
+           
             rest = max(prevRest, prevSold);
         }
 
